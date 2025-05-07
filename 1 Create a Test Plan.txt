@@ -1,0 +1,92 @@
+Test Plan for Airline Application
+1. Introduction
+This test plan outlines the core functionality of the airline application, including booking, payment, flight status, user management and more. To ensure that the airline application performs all the core functions like flight search, bookings, payments, user management, and check ins accurately, securely and efficiently, providing a seamless experience to end users and meeting business requirements.
+2. Objectives
+Verify usability and accessibility across devices and browser.
+Validate user workflows (searching flights, booking, payment)
+Verify system integration (e.g., payment gateway, airline APIs)
+ Ensure the application meets performance benchmarks.
+3. Scope
+IN SCOPE
+User registration and login
+Flight search & booking
+Seat selection
+Ticket cancellation and rescheduling
+Notification (SMS/Email)
+Check in and boarding passes generation
+Payment gateway integration
+OUT OF SCOPE
+Backend API testing not owned by team
+Third-party airline systems( Ex. Weather, data, airline alliances)
+4. Test Strategy
+Functional testing
+Integration testing
+System Testing
+UI / UX Testing
+Performance Testing
+Security Testing
+Compatibility Testing
+Regression Testing
+
+5. Test Environment
+Browsers: Chrome, Firefox, Safari, Edge (Latest versions)
+OS: Windows, macOS, Android, iOS
+Mobile Devices: Andriod 10+, iOS 14+
+Backend: Java/NET APIs
+Database – MySQL/Postgre SQL
+Tools: Selenium, Postman, Jmeter, Jira, TestRail
+Test Data: Dummy user accounts, mock payment card details, sample flights (domestic/ international)
+6. Test Scenarios
+User searches for flights
+ User books a flight
+ User cancels or reschedules booking
+ Payment with valid and invalid card
+Login, registration, password reset
+Admin login and flight management
+7. Sample Test Cases
+TC001: Search Flight
+Steps:
+1. Open homepage
+2. Enter source, destination, and date
+3. Click 'Search'
+Expected: List of flights is displayed
+
+TC002: Book Flight
+Steps:
+1. Select flight
+2. Enter passenger details
+3. Pay with card
+Expected: Booking confirmed page shown
+8.  Roles and responsibilities
+
+Role	Responsibility
+Test manager	Define overall test strategy and test plan
+Test  Analyst/ QA Engineer	Execute tests, Report and track bugs/defects.
+Automation Tester	Develop and run automation scripts
+DevOps / Test environment Engineer	Support deployment of builds and test data setup
+Business Analyst	Support in UAT
+
+9. Deliverables
+- Test Plan Document
+- Test Cases and test scripts
+- Bug Report
+- Test Summary Report
+10. Schedule
+Phase	timeline
+Requirement Analysis	Simulate failures, test multiple gateways, implement retry mechanisms
+Test Case Design	Implement delivery receipts, fallback notification channels
+Test Execution	Use cloud based devices
+Bug Fix Verification & Final Report	Perform usability testing, collect user feedback early
+Final reporting
+
+11. Risks & Mitigations
+Risk	Mitigation Strategy
+Payment gateway failure	Simulate failures, test multiple gateways, implement retry mechanisms
+Booking confirmation not received (email/SMS failure)	Implement delivery receipts, fallback notification channels
+Limited test devices	Use cloud based devices
+Poor usability or navigation	Perform usability testing, collect user feedback early
+
+12. Exit Criteria
+95% + test case execution
+All major functionality tested
+No high severity defects
