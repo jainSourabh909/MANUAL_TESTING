@@ -8,6 +8,7 @@ Verify system integration (e.g., payment gateway, airline APIs)
  Ensure the application meets performance benchmarks.
 3. Scope
 IN SCOPE
+
 User registration and login
 Flight search & booking
 Seat selection
